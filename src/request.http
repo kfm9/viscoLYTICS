@@ -1,0 +1,28 @@
+//wird verwendet um sich die Struktur der API anzusehen
+
+# GET http://192.168.2.3:3000/api/datasources HTTP/1.1
+# GET http://htbla:htbla@vlz-server:8081/gui/api/metadata/1700003SHEET HTTP/1.1
+# GET http://192.168.2.1:8081/gui/api/data/fetch?item=1700003SHEET/EX_AV_Moment&start=153847535&end=1539166556
+
+GET http://192.168.2.3:3000/api/dashboards/uid/b47d4f7f-7cff-490b-938c-41e099d4a8fd 
+Accept: application/json
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+Authorization: Bearer glsa_Fe2TsMgmCLwZ4DE6OH5ykEW4m3dyP6U1_054eee3d
+
+# POST http://192.168.2.3:3000/api/dashboards/db HTTP/1.1
+# Accept: application/json
+# Content-Type: application/json
+# Authorization: Bearer glsa_Fe2TsMgmCLwZ4DE6OH5ykEW4m3dyP6U1_054eee3d
+
+# {
+#     "dashboard": {
+#         "id": null,
+#         "uid": null,
+#         "title": "sampleDashboard",
+    
+#   }
+# }
+
+
+

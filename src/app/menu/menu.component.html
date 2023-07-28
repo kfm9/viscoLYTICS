@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+
+<nav class="sidenav">   
+    <div [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()">
+            <i class='bx bx-menu'></i>
+        </button>
+        
+        <div class="logo-text" @fadeInOut *ngIf="collapsed">Menu</div>
+        
+    </div>
+    <ul class="sidenav-nav" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <li class="sidenav-nav-item" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink]">
+                <i class="sidenav-link-icon" [class]="data.icon" ></i>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">{{data.label}}</span>
+            </a>
+        </li> 
+    </ul>
+</div>
+</nav>
